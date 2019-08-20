@@ -1,0 +1,12 @@
+.keyboard {
+	margin: 2rem 0;
+}
+
+.keyboard__letter {
+	margin: 0 0.2rem;
+}
+
+.phrase {
+	margin: 2rem;
+	display: inline-block;
+}

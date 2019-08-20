@@ -58,11 +58,12 @@ class App extends Component {
       <main role="main">
         <h1>Jeu du pendu</h1>
         <h2>Score : {score}</h2>
-        <Phrase phrase={this.computeDisplay()} />
+        <Phrase className="phrase" phrase={this.computeDisplay()} />
         <div className="keyboard">
           {
             letters.map( letter => (
               <button 
+                className="keyboard__letter"
                 key={letter} 
                 onClick={() => this.handleClick(letter, usedLetters)} 
                 disabled={this.disableLetter(letter)}>
