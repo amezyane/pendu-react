@@ -58,7 +58,7 @@ class App extends Component {
       <main role="main">
         <h1>Jeu du pendu</h1>
         <h2>Score : {score}</h2>
-        <Phrase className="phrase" phrase={this.computeDisplay()} />
+        <Phrase className="phrase" letters={this.computeDisplay()} />
         <div className="keyboard">
           {
             letters.map( letter => (

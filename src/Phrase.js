@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Phrase = ({phrase}) => (
+const Phrase = ({letters}) => (
 	<div className="phrase">
-		{phrase}
+		{ letters.split('').map((letter, key) => (
+			<span className="phrase__letter" key={key}>{letter}</span>
+		 ))
+		}
 	</div>
 )
+
 
 export default Phrase;
